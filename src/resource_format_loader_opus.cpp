@@ -16,7 +16,7 @@ PackedStringArray ResourceFormatLoaderOpus::_get_recognized_extensions() const {
 }
 
 bool ResourceFormatLoaderOpus::_handles_type(const StringName &type) const {
-    return type == StringName("AudioStreamOpus");
+    return type == StringName("AudioStreamOpus") || type == StringName("AudioStream");
 }
 
 String ResourceFormatLoaderOpus::_get_resource_type(const String &path) const {

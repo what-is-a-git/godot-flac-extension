@@ -18,7 +18,7 @@ PackedStringArray ResourceFormatLoaderWavExt::_get_recognized_extensions() const
 }
 
 bool ResourceFormatLoaderWavExt::_handles_type(const StringName &type) const {
-    return type == StringName("AudioStreamWavExt");
+    return type == StringName("AudioStreamWavExt") || type == StringName("AudioStream");
 }
 
 String ResourceFormatLoaderWavExt::_get_resource_type(const String &path) const {

@@ -16,7 +16,7 @@ PackedStringArray ResourceFormatLoaderFLAC::_get_recognized_extensions() const {
 }
 
 bool ResourceFormatLoaderFLAC::_handles_type(const StringName &type) const {
-    return type == StringName("AudioStreamFLAC");
+    return type == StringName("AudioStreamFLAC") || type == StringName("AudioStream");
 }
 
 String ResourceFormatLoaderFLAC::_get_resource_type(const String &path) const {
